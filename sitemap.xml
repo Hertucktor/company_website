@@ -8,24 +8,24 @@
 
 
 <url>
-  <loc>https://poneleit-it.de/index.html</loc>
+  <loc>https://poneleit-it.de/</loc>
   <lastmod>2025-07-07T20:56:28+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://poneleit-it.de/</loc>
-  <lastmod>2025-07-07T20:56:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://poneleit-it.de/impressum.html</loc>
-  <lastmod>2025-06-13T14:41:02+00:00</lastmod>
+  <lastmod>2025-07-08T13:58:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://poneleit-it.de/datenschutz.html</loc>
   <lastmod>2025-06-13T14:41:02+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://poneleit-it.de/datenschutz</loc>
+  <lastmod>2025-06-13T14:41:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
