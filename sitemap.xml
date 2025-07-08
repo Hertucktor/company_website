@@ -4,19 +4,29 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>https://poneleit-it.de/index.html</loc>
-    <lastmod>2025-06-10T14:03:56+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://poneleit-it.de/impressum.html</loc>
-    <lastmod>2025-06-09T14:24:56+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://poneleit-it.de/datenschutz.html</loc>
-    <lastmod>2025-06-09T14:24:56+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://poneleit-it.de/index.html</loc>
+  <lastmod>2025-07-07T20:56:28+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://poneleit-it.de/</loc>
+  <lastmod>2025-07-07T20:56:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://poneleit-it.de/impressum.html</loc>
+  <lastmod>2025-06-13T14:41:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://poneleit-it.de/datenschutz.html</loc>
+  <lastmod>2025-06-13T14:41:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
