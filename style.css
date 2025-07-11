@@ -412,6 +412,27 @@ nav {
 
 /* Impressum Kacheln */
 
+.impressum-header {
+  background-color: #f5f5f5;  /* Hellgrauer Hintergrund */
+  padding: 30px 0;           /* Abstand oben/unten */
+  border-bottom: 1px solid #ddd;  /* Trennlinie unten */
+  margin-bottom: 30px;       /* Abstand zum Inhalt */
+}
+
+.impressum-header h1 {
+  font-size: clamp(38px, 7vw, 125px);           /* Groß wie bei United Media */
+  font-weight: bold;
+  color: #333;               /* Dunkelgrauer Text */
+  text-align: center;        /* Mittig ausgerichtet */
+  margin: 0;                 /* Standard-Margins entfernen */
+}
+
+.impressum-container {
+  width: 80%;                /* Breite anpassen */
+  max-width: 1200px;         /* Maximalbreite für große Bildschirme */
+  margin: 0 auto;            /* Zentriert den Container */
+}
+
 .columns-container {
     display: flex;
     gap: 20px;
