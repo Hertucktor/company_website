@@ -1,13 +1,13 @@
 /* Grundlayout */
 :root {
     font-size: 16px; /* Basis für rem */
-    --primary: #051422;       /* Dunkelblau für Überschriften */
-    --secondary: #3498db;     /* Akzentblau für Hover */
+    --primary: #021526;       /* Dunkelblau für Hintergründe */
+    --secondary: #03346E;     /* Akzentblau für Button */
+    --tertiary: #6EACDA;      /* Babyblau für Schattierungen */
+    --quaternary: #E2E2B6;    /* Eierschalenfarben für Hintergründe */
     --accent: #e74c3c;        /* Rot für Hervorhebungen (optional) */
     --background: #f8f9fa;    /* Hellgrau für Karten-Hintergrund */
     --text: #333;             /* Haupttextfarbe */
-    --light: #f8f9fa;         /* Hintergrund hell */
-    --dark: #333;             /* Textfarbe */
     --white: #FFFFFF;
 }
 
@@ -57,6 +57,14 @@ nav {
 .logo {
     height: 75px;
     width: auto;
+}
+
+.svg-black {
+    fill: black;
+}
+
+.svg-white {
+    fill: white;
 }
 
 .nav-list {
@@ -147,7 +155,7 @@ nav {
 
 .cta-button {
     display: inline-block;
-    background: var(--secondary);
+    background: var(--tertiary);
     color: white;
     padding: 0.8rem 2rem;
     border-radius: 50px;
@@ -326,7 +334,7 @@ nav {
 
 /* Partner-Sektion */
 .partners {
-    background: var(--light);
+    background: var(--background);
     padding: 5rem 1rem;
     width: 100%;
 }
@@ -393,7 +401,7 @@ nav {
 }
 
 .partner-content p {
-    color: var(--dark);
+    color: var(--text);
     margin-bottom: 1.5rem;
 }
 
@@ -471,10 +479,9 @@ nav {
 }
 /* Footer  */
 .footer {
-  background-color: #2c3e50;
+  background-color: var(--primary);
   color: #ecf0f1;
   padding: 3rem 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-content {
@@ -504,7 +511,7 @@ nav {
 }
 
 .footer-heading {
-  color: #3498db;
+  color: var(--tertiary);
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   position: relative;
@@ -518,7 +525,6 @@ nav {
   bottom: 0;
   width: 40px;
   height: 2px;
-  background-color: #3498db;
 }
 
 .footer-nav {
@@ -618,7 +624,7 @@ nav {
     right: 30px;
     width: 50px;
     height: 50px;
-    background-color: rgba(5, 20, 34, 0.7); /* Halbtransparent in deiner Logo-Farbe */
+    background-color: var(--primary); /* Halbtransparent in deiner Logo-Farbe */
     color: white;
     border: none;
     border-radius: 50%;
