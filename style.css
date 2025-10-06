@@ -1,31 +1,37 @@
-/* Grundlayout */
+@font-face {
+  font-family: 'Source Sans 3';
+  src: url('./assets/fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+  /* Grundlayout */
 :root {
-    font-size: 16px; /* Basis für rem */
-    --primary: #021526;       /* Dunkelblau für Hintergründe */
-    --secondary: #03346E;     /* Akzentblau für Button */
-    --tertiary: #6EACDA;      /* Babyblau für Schattierungen */
-    --quaternary: #E2E2B6;    /* Eierschalenfarben für Hintergründe */
-    --accent: #e74c3c;        /* Rot für Hervorhebungen (optional) */
-    --background: #f8f9fa;    /* Hellgrau für Karten-Hintergrund */
-    --text: #333;             /* Haupttextfarbe */
-    --white: #FFFFFF;
+  font-size: 16px; /* Basis für rem */
+  --primary: #021526;       /* Dunkelblau für Hintergründe */
+  --secondary: #03346E;     /* Akzentblau für Button */
+  --tertiary: #6EACDA;      /* Babyblau für Schattierungen */
+  --quaternary: #E2E2B6;    /* Eierschalenfarben für Hintergründe */
+  --accent: #e74c3c;        /* Rot für Hervorhebungen (optional) */
+  --background: #f8f9fa;    /* Hellgrau für Karten-Hintergrund */
+  --text: #333;             /* Haupttextfarbe */
+  --white: #FFFFFF;
 }
 
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Source Sans Pro', Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: var(--background);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Viewport-Höhe ausnutzen */
-    font-size: clamp(1rem, 2vw, 1.2rem); /* Mobile → Desktop */
+  font-family: 'Source Sans 3', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Viewport-Höhe ausnutzen */
+  font-size: clamp(1rem, 2vw, 1.2rem); /* Mobile → Desktop */
 }
 
 header {
