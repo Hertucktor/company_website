@@ -1,41 +1,3 @@
-@font-face {
-    font-family: 'Source Sans 3';
-    src: url('./assets/fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
-    /* Grundlayout */
-:root {
-    font-size: 16px; /* Basis für rem */
-    --primary: #021526;       /* Dunkelblau für Hintergründe */
-    --secondary: #03346E;     /* Akzentblau für Button */
-    --tertiary: #6EACDA;      /* Babyblau für Schattierungen */
-    --quaternary: #E2E2B6;    /* Eierschalenfarben für Hintergründe */
-    --accent: #e74c3c;        /* Rot für Hervorhebungen (optional) */
-    --background: #f8f9fa;    /* Hellgrau für Karten-Hintergrund */
-    --text: #333;             /* Haupttextfarbe */
-    --white: #FFFFFF;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Source Sans 3', Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: var(--background);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Viewport-Höhe ausnutzen */
-    font-size: clamp(1rem, 2vw, 1.2rem); /* Mobile → Desktop */
-    overflow-x: hidden;
-}
-
 /* Vollbild-Banner mit Hintergrundbild */
 .footer-banner {
   width: 100vw;
@@ -62,11 +24,11 @@ body {
 /* Container für Text, positioniert im unteren Drittel */
 .banner-content {
     text-align: center;
-    margin-bottom: 5%;       /* Position im unteren Drittel */
+    margin-bottom: 10%;       /* Position im unteren Drittel */
     color: white;             /* Textfarbe für bessere Lesbarkeit */
     
     /* Optional: Text-Hintergrund für besseren Kontrast */
-    background-color: rgba(0, 0, 0, 0.5); /* Halbtransparent schwarz */
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 1rem 2rem;
     border-radius: 4px;
 }
@@ -95,7 +57,7 @@ body {
 .contact-circle {
     position: absolute;
     top: -220px; /* Überlappung nach oben */
-    right: 50%; /* Abstand vom rechten Rand */
+    right: 45%; /* Abstand vom rechten Rand */
     
     /* Kreis-Eigenschaften */
     width: 160px;
@@ -165,7 +127,10 @@ body {
 .footer {
 background-color: var(--primary);
 color: #ecf0f1;
-padding: 3rem 1rem;
+}
+
+.footer-menu {
+    padding: 3rem 1rem;
 }
 
 .footer-content {
@@ -332,26 +297,26 @@ transform: translateY(-2px);
 @media (max-width: 768px) {
     .footer-banner {
         height: 400px; /* Geringere Höhe auf Mobilgeräten */
-        margin-bottom: 15%;
+        margin-bottom: 17%;
     }
     
     .footer-banner h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     .footer-banner h3 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     
     .banner-content {
-        margin-bottom: 10%; /* Etwas höhere Position auf Mobilgeräten */
+        margin-bottom: 12%; /* Etwas höhere Position auf Mobilgeräten */
         padding: 0.8rem 1.2rem;
     }
 
     .contact-circle {
         width: 80px;
         height: 80px;
-        top: -100px;
+        top: -12vh;
         right: 45%; /* Abstand vom rechten Rand */
     }
     
