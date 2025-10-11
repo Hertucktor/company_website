@@ -218,9 +218,6 @@
     margin-top: 0.8rem;
 }
 
-
-
-/* Animationen */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -239,6 +236,113 @@
 .service-item:nth-child(1) { animation-delay: 0.1s; }
 .service-item:nth-child(2) { animation-delay: 0.2s; }
 .service-item:nth-child(3) { animation-delay: 0.3s; }
+
+/* timeline section */
+
+.timeline-container {
+    background-color: var(--background);
+    padding: 20px;
+    margin: 0;
+        max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.timeline-container h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    position: relative;
+    margin-top: 0;
+}
+
+.timeline-container h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: var(--secondary);
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.timeline-container .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Zentrale Linie */
+.timeline-container .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: #3498db;
+    border-radius: 2px;
+}
+
+.timeline-container .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.timeline-container .timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-container .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Rechte Elemente (ungerade) */
+.timeline-container .timeline-item:nth-child(odd) .timeline-content {
+    right: -60%;
+}
+
+/* Linke Elemente (gerade) - Korrektur: Abstand von der Linie */
+.timeline-container .timeline-item:nth-child(even) .timeline-content {
+    left: -10%;
+}
+
+/* Kreise auf der Linie */
+.timeline-container .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #3498db;
+    border: 4px solid white;
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.2);
+}
+
+.timeline-container h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.timeline-container p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
 
 /* Card Layout */
 .card {
@@ -530,6 +634,23 @@
     /* service */
     .services-section {
         padding: 4rem 1rem;
+    }
+    /* timeline */
+        .timeline-container .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-container .timeline-content {
+        width: calc(100% - 60px);
+        left: 60px !important;
+    }
+    
+    .timeline-container .timeline-item::after {
+        left: 20px;
+    }
+    
+    .timeline-container h2 {
+        font-size: 2rem;
     }
     /* card */
     .card-grid {
