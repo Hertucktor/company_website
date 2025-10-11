@@ -117,72 +117,121 @@ nav {
 }
 
 /* Hero-Section (Willkommensblock) */
-.hero {
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 152, 219, 0.8)),
-                url('img/world_top_view.jpg') no-repeat center center/cover;
-    color: white;
-    min-height: 80vh;
+.hero-section {
     display: flex;
     align-items: center;
-    padding: 0; /* Kein Padding seitlich */
-    position: relative;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-    z-index: -1;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #9EC9FE 0%, #F2F6F7 45%);
+    padding: 4rem 2rem;
+    font-family: 'Inter', 'Arial', sans-serif;
 }
 
 .hero-content {
-    margin: 0 auto;
-    position: relative;
+    flex: 1;
+    padding-right: 4rem;
+    max-width: 600px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+.hero-content a {
+    text-decoration: none;
 }
 
-.hero p {
-    font-size: 1.2rem;
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
     margin-bottom: 2rem;
-    opacity: 0.9;
+    color: #1a365d;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    color: #4a5568;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.services-list {
+    margin-bottom: 3rem;
+}
+
+.services-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.2rem;
+    color: #2d3748;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.services-list li:before {
+    content: "✓";
+    color: #4299e1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    background: #ebf8ff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 50%;
+    min-width: 30px;
+    text-align: center;
+}
+
+.services-list li:last-child {
+    border-bottom: none;
 }
 
 .cta-button {
-    display: inline-block;
-    background: var(--tertiary);
+    background: linear-gradient(135deg, #4299e1, #3182ce);
     color: white;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(66, 153, 225, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button:active {
+    transform: translateY(-1px);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+    transition: transform 0.5s ease;
+}
+
+.hero-image img:hover {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
 }
 
 .cta-button:hover {
-    background: transparent;
+    background: var(--primary);
     border-color: white;
     transform: translateY(-3px);
-}
-
-/* Stil für das "Mehr erfahren"-Symbol */
-.cta-arrow {
-    margin-left: 0.5rem;
-    transition: transform 0.3s ease;
-}
-
-.cta-button:hover .cta-arrow {
-    transform: translateX(5px);
+    box-shadow: 0 8px 25px rgba(66, 153, 225, 0.4);
 }
 
 /* Karten Layout */
@@ -517,11 +566,32 @@ nav {
     .logo {
         height: 50px;
     }
-    .hero {
-    min-height: 70vh;
+    .hero-image img {
+        max-width: 100%;
     }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
     .hero-content {
-    padding: 1rem;
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content a {
+        font-size: 0.7rem;
+    }
+
+    .services-list li {
+        justify-content: center;
+        text-align: left;
     }
     .card-grid {
         grid-template-columns: 1fr;
