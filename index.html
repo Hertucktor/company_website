@@ -8,6 +8,7 @@
     <link rel="icon" href="img/favicon/favicon_weiß.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styling/index.css">
     <link rel="stylesheet" href="styling/footer.css">
     <script src="script.js"></script>
 </head>
@@ -64,39 +65,72 @@
             </nav>
         </div>
     </header>
-    <!-- Willkommensblock / Hero-Section -->
-        </header>
-    <!-- Willkommensblock / Hero-Section -->
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>IT Beratung, Entwicklung und Inbetriebnahme</h1>
-            <p>Vervollständigen Sie das Potenzial Ihres Unternehmens mit der Einführung von digitalen Systemen, zur nachhaltigen Unterstützung von Ihrem Betriebsablauf</p>
-            <ul class="services-list">
-                <li>Webseiten und Onlineshops für optimale digitale Präsenz</li>
-                <li>Plannungssysteme wie CRM und WaWi</li>
-                <li>Programmierung von Apps zur direkten Abbildung ihres Anwendungsfalles</li>
-                <li>Hilfe bei Problemen von Bestandssoftware</li>
-            </ul>
-                <a  class="cta-button"
-                    href="https://calendly.com/poneleit-it" 
-                    target="_blank" 
-                    class="cta-button"
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/poneleit-it'});return false;"
-                >
-                    Jetzt ein kostenloses Erstgespräch ausmachen
-                </a>
-        </div>
-        <div class="hero-image">
-            <!-- Hier können Sie Ihr Bild einfügen -->
-            <img src="img/hero-contact.jpg" alt="IT Dienstleistungen und Beratung">
-        </div>
-    </section>
-    <main class="container">
+    <main>
+        <!-- Willkommensblock / Hero-Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>IT Beratung, Entwicklung und Inbetriebnahme</h1>
+                <p>Vervollständigen Sie das Potenzial Ihres Unternehmens mit der Einführung von digitalen Systemen, zur nachhaltigen Unterstützung von Ihrem Betriebsablauf</p>
+                <ul class="services-list">
+                    <li>Webseiten und Onlineshops für optimale digitale Präsenz</li>
+                    <li>Plannungssysteme wie CRM und WaWi</li>
+                    <li>Programmierung von Apps zur direkten Abbildung ihres Anwendungsfalles</li>
+                    <li>Hilfe bei Problemen von Bestandssoftware</li>
+                </ul>
+                    <a  class="cta-button"
+                        href="https://calendly.com/poneleit-it" 
+                        target="_blank" 
+                        class="cta-button"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/poneleit-it'});return false;"
+                    >
+                        Jetzt ein kostenloses Erstgespräch ausmachen
+                    </a>
+            </div>
+            <div class="hero-image">
+                <!-- Hier können Sie Ihr Bild einfügen -->
+                <img src="img/hero-contact.jpg" alt="IT Dienstleistungen und Beratung">
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="services-header">
+                <h2>Resultate - direkt aus dem Homeoffice in Ihr Büro</h2>
+            </div>
+            <div class="services-grid">
+                <div class="services-image">
+                    <img src="img/service-contact.jpg" alt="Digitale Geschäftsprozesse">
+                </div>
+                <div class="services-list-detailed">
+                    <div class="service-item">
+                        <div class="service-title">GoBD konformes Dokumentenmanagement und E-Mail Archivierung</div>
+                        <div class="service-description">
+                            Machen Sie sich unabhängig von Papierverkehr und ewiger Aktensortierer und sichern Sie Ihr Unternehmen zusätzlich zukunftssicher ab.
+                        </div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-title">Einführung von E-Rechnung</div>
+                        <div class="service-description">
+                            Lassen Sie uns zusammen Ihr Rechnungswesen umstellen, damit Sie auch dem endgültigen Schlusstermin am 
+                            <div class="deadline-badge">01.01.2028</div> 
+                            gewappnet sind.  
+                        </div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-title">Einpflegen eines einheitlichen Warenwirtschaftssystem</div>
+                        <div class="service-description">
+                            Lieferscheine und Bestellungen sowie Lagerhaltung alles an einem Ort und nicht nur im Büro sondern auch von überall einsehbar.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Kontakt-Block -->
         <section class="contact" id="kontakt">
             <div class="card-container">
-                <div class="contact-container">
-                    <h2 class="card-title" ">So erreichen Sie mich</h2>
+                <div class="contact-header">
+                    <h2 class="card-title">So erreichen Sie mich</h2>
                     <p>Ich freue mich auf Ihren Anruf, einer Whatsapp, einer E-Mail oder einer Anfrage zu einem Termin.</p>
                 </div>
 
