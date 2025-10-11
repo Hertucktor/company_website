@@ -15,6 +15,7 @@
   --background: #f8f9fa;    /* Hellgrau für Karten-Hintergrund */
   --text: #333;             /* Haupttextfarbe */
   --white: #FFFFFF;
+  --whatsapp: #008000;
 }
 
 html, body {
@@ -254,7 +255,7 @@ nav {
 
 /* Kontakt-Sektion */
 .contact {
-    background: white;
+    background: var(--background);
     padding: 30px;
     margin: 40px 0;
     border-radius: 8px;
@@ -317,8 +318,8 @@ nav {
 }
 
 .whatsapp-btn {
-    background: var(--whatsapp);
-    color: green;
+    background: var(--background);
+    color: var(--whatsapp);
     padding: 0.8rem 1.5rem;
     border-radius: 50px;
     text-decoration: none;
@@ -338,8 +339,10 @@ nav {
 /* Partner-Sektion */
 .partners {
     background: var(--background);
-    padding: 5rem 1rem;
-    width: 100%;
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .partners-container {
